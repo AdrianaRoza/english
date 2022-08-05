@@ -1,10 +1,23 @@
+import Self from './pages/Self';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from './pages/Layout';
+import Home from './pages/Home';
+import Form from './pages/Form';
+
 import './App.css';
 
 function App() {
   return (
-    <h1>
-      Adriana
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="self" element={<Self />} />
+          <Route path="form" element={<Form />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 
