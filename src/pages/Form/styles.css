@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+.words {
+  width: 100px;
+  position: relative;
+  transition: all 400ms ease;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.word {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;  
+}
+
+.front {
+  background-color: aquamarine;
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-color: rgb(232, 119, 6);
+}
+
+.words:hover {
+  transform: rotateY(180deg);
+}

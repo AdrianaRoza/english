@@ -1,10 +1,13 @@
-import Self from './pages/Self';
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Form from './pages/Form';
+import Words from './pages/Words'
+
 
 import './App.css';
+
 
 function App() {
   return (
@@ -12,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="self" element={<Self />} />
+          <Route path="words" element={<Words/>} />
           <Route path="form" element={<Form />} />
         </Route>
       </Routes>

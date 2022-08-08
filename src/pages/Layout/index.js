@@ -7,15 +7,12 @@ const Layout = () => {
       <nav>
         <div className='itemsMenu'>
           <div><Link to="/">Home</Link></div>
-          <div><Link to="/self">Self</Link></div>
+          <div><Link to="/words">Words</Link></div>
           <div><Link to="/form">Form</Link></div>
         </div>
       </nav>
 
       <Outlet />
-      <div>
-        Here is the LAYOUT PAGE
-      </div>
     </>
   )
 }
